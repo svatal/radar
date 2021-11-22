@@ -63,3 +63,14 @@ function getControlPoints(
 export function getCubicStart(path: ICubicPath[], index: number): IPosition {
   return path[(index - 1 + path.length) % path.length].end;
 }
+
+export interface IFullCubicPath extends ICubicPath {
+  start: IPosition;
+}
+
+export function getFullCubicPath(
+  path: ICubicPath[],
+  index: number
+): IFullCubicPath {
+  return { ...path[index], start: getCubicStart(path, index) };
+}

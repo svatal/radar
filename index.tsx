@@ -1,6 +1,7 @@
 import * as b from "bobril";
 import { Path } from "./src/components/path";
-import { getCircularPath } from "./src/cubicPath";
+import { Segment } from "./src/components/segment";
+import { getCircularPath, getFullCubicPath } from "./src/cubicPath";
 import { IPosition } from "./src/utils";
 
 b.init(() => <App />);
@@ -18,6 +19,9 @@ function App() {
       <input type="text" value={t} />
       <svg style={{ width: "100%", height: "500" }}>
         <Path path={path} />
+        {path.map((p, i) => (
+          <Segment segment={getFullCubicPath(path, i)} />
+        ))}
       </svg>
     </>
   );

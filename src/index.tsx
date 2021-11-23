@@ -1,11 +1,11 @@
 import * as b from "bobril";
-import { Line } from "./src/components/line";
-import { Path } from "./src/components/path";
-import { Point } from "./src/components/point";
-import { Segment } from "./src/components/segment";
-import { tryToGetIntersection } from "./src/cubicMath";
-import { getCircularPath, getFullCubicPath } from "./src/cubicPath";
-import { IPosition, isDefined } from "./src/utils";
+import { Line } from "./components/line";
+import { Path } from "./components/path";
+import { Point } from "./components/point";
+import { Segment } from "./components/segment";
+import { tryToGetIntersection } from "./cubicMath";
+import { getCircularPath, getFullCubicPath } from "./cubicPath";
+import { IPosition, isDefined } from "./utils";
 
 b.init(() => <App />);
 

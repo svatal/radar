@@ -1,8 +1,8 @@
 {
-  "name": "scanner",
+  "name": "radar",
   "version": "1.0.0",
   "description": "",
-  "main": "index.tsx",
+  "main": "src/index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
